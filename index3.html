@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas semanticas</title>
+    <meta name="author" content="Miguel Angel Hernández Rojas">
+    <meta name="keywords" content="HTML, metadato, etiquetas, semantica">
+    <meta name="description" content="Esta página contiene los fundamentos de las etiquetas semanticas">
+</head>
+<body>
+    <h2>Como citar con semantica</h2>
+    <!--citas cortas-->
+    <p>Como dijo un sabio "Yo solo se que no se nada" -Sabio</p>
+    <p>Como dijo un sabio <q>Yo solo se que no se nada</q> -Sabio</p>
+
+    <!--Citas Largas-->
+    <p>Como dijo un sabio</p>
+    <blockquote>
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium nisi, quisquam nemo dolorem magni, illo minima vero tempore ipsa corporis tenetur dolores impedit quidem. Sequi itaque fugiat cupiditate assumenda."
+    </blockquote>
+    <p>-Sabio</p>
+
+    <hr><hr>
+    <h2>Saltos de línea y reglas horizontales</h2>
+    <p>Este es el primer parrafo<br><br>Este es el segundo parrafo<br><br>Este es el tercer parrafo</p>
+
+    <hr>
+    <h2>Visualizacion y formato de codigo</h2>
+    <p>Cuando nosotros usamos <code>Print("Hola mundo")</code>en python, la salida en consola será: <code>Hola mundo</code></p>
+
+    <h3>Visualizacion de código en varias líneas</h3>
+    <p>Este programa suma dos número en python</p>
+    <pre>
+        #suma de dos números en python
+        num1 = 2
+        num2 = 4 
+        print(num1 + num2)
+    </pre>
+
+    <p>Este código imprime un hola mundo en HTML</p>
+    <!--Para escribir caracteres especiales como <> se utiliza las entidades html que permiten avisar al navegador que vamos a -->
+    <pre>
+        &lt;body&gt;
+            &lt;h1&gt;Hola mundo&lt;h1&gt;
+        &lt;/body&gt;
+    </pre>
+
+    <hr>
+    <p>Para representar la entrada de teclado, es decir las teclas se utiliza la etiqueta <code>&lt;kbd&gt;</code></p>
+    <p>para copiar el texto de un archivo utilizamos la combinación de teclas <kbd>Ctrl<kbd>+<kbd>c</kbd></kbd></kbd></p>
+</body>
+</html>
