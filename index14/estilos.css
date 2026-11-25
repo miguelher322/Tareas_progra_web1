@@ -1,0 +1,153 @@
+html{
+    font-size:10px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, black, blue);
+    color: aliceblue;
+}
+
+#encabezado{
+    border: 0.2rem solid yellow;
+    font-size: 2rem;
+    position: sticky;
+    width: 100%;
+    z-index:5;
+    top: 0;
+}
+
+.logo{
+    border: 0.2rem solid lemonchiffon;
+    border-radius: 45%;
+    width: 20%;
+    height: 30rem;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+}
+
+#encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem gold;
+    position: absolute;
+    top: 10rem;
+    left:30%;
+}
+
+#navegacion ul{
+    list-style-type: none;
+    padding-left: 0%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    border: 0.2rem solid red;
+    width: 25%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#navegacion ul li{
+    display: inline-block;
+}
+
+#elementos-posicionados{
+    border: 0.2rem solid goldenrod;
+    padding: 1rem;
+    height: 200rem;
+    position: relative;
+}
+
+.corazon{
+    border:0.2rem solid lime ;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: sticky;
+    top:15rem;
+}
+
+.corazon img{
+    width: 100%;
+    height: 100%;
+}
+
+.flecha{
+    border:0.2rem solid purple ;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    z-index: 2;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    z-index: 2;
+}
+
+.flecha img{
+    width: 100%;
+    height: 100%;
+}
+
+.ideas{
+    border:0.2rem solid yellow ;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+.ideas img{
+    width: 100%;
+    height: 100%;
+}
+
+.estrella{
+    border:0.2rem solid blue ;
+    width: 40rem;
+    height: 50rem;
+    margin: 0.5rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.estrella img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Consultas de medios(medias queries)
+Sirve para definir los estilos a elementos HTML, segun el
+tamaño de la pantalla de nuestro dispositivo, gracias a esto
+se proporciona una herramienta que nos sirve para la creacion
+de paginas web resaponsivas o adaptables.
+Si se definene varias consultas de medios, se deben poner en forma
+descendente segun la medida del dispositivo.
+Moviles(480px), Tablets(480px-960px), PC(960px-1280px)
+*/
+
+@media screen and (max-width:1250px) {
+    #encabezado h1{
+        left:29%;
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:930px) {
+    #encabezado h1{
+        left:29%;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:1250px) {
+    .logo{
+        height: 22rem;
+    }
+}
